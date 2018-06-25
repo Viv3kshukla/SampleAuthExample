@@ -41,7 +41,7 @@ public class AdminController {
 			System.out.println("\n\n\n Hi users "+username+"\n\n\n");
 			
 		}
-		
+		System.out.println("\n\n hi users "+principal+" \n\n\n");
 		Collection<SimpleGrantedAuthority> authorities = (Collection<SimpleGrantedAuthority>)    SecurityContextHolder.getContext().getAuthentication().getAuthorities();
 		
 		System.out.println("\n\n\n the role of the user is  "+ authorities +" ");
@@ -68,6 +68,10 @@ public class AdminController {
 			System.out.println("\n\n\n Hi users "+username+"\n\n\n");
 			
 		}
+		System.out.println("\n\n hi users "+principal+" \n\n\n");
+		Collection<SimpleGrantedAuthority> authorities = (Collection<SimpleGrantedAuthority>)    SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+		System.out.println("\n\n hi users "+principal+" \n\n\n");
+		System.out.println("\n\n\n the role of the user is  "+ authorities +" ");
 		
 		return "Secured Hello";
 	}
@@ -86,9 +90,9 @@ public class AdminController {
 			System.out.println("\n\n\n Hi users "+username+"\n\n\n");
 			
 		}
-		
+		System.out.println("\n\n hi users "+principal+" \n\n\n");
 		Collection<SimpleGrantedAuthority> authorities = (Collection<SimpleGrantedAuthority>)    SecurityContextHolder.getContext().getAuthentication().getAuthorities();
-		
+		System.out.println("\n\n hi users "+principal+" \n\n\n");
 		System.out.println("\n\n\n the role of the user is  "+ authorities +" ");
 		return "Say Hello";
 	}
